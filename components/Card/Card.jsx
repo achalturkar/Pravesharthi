@@ -11,7 +11,7 @@ const Card = ({ Detail }) => {
             data-aos="fade-up"
           >
             {/* Image */}
-            <div className="flex justify-center mb-4 h-1/2">
+            <div className="flex justify-center mb-4 h-1/3">
               <Image
                 src={each.img}
                 alt="services"
@@ -22,17 +22,17 @@ const Card = ({ Detail }) => {
             </div>
 
             {/* Heading and Description */}
-            <div className="space-y-2 h-1/2 text-center">
-              <h1 className="font-bold text-xl text-blue-950 h-1/4">{each.head}</h1>
+            <div className="space-y-2 h-1.5/3 ">
+              <h1 className="font-bold text-xl text-blue-950 h-1/4 text-center">{each.head}</h1>
               <p className="text-md text-gray-700 h-3/4">{each.desc}</p>
             </div>
 
             {/* Optional Link */}
-            {/* <Link href={each.link}>
-              <div className="mt-4 p-2 text-center font-semibold bg-orange-400 text-white rounded-full hover:bg-orange-500">
+            <Link href="/services">
+              <div className="mt-4 p-2 text-center font-semibold bg-orange-400 text-white rounded-full hover:bg-orange-500 h-0.5/3">
                 Read More
               </div>
-            </Link> */}
+            </Link>
           </div>
         </li>
       ))}

@@ -1,12 +1,14 @@
+import HeroSection from "@/components/HeroSection/HeroSection";
+
+const Services = () => {
+
+    return (
+
+        <main>
+            <HeroSection title="Our Services" />
 
 
-const Services = () =>{
-
-    return(
-
-        <>
-
-        </>
+        </main>
     )
 }
 
