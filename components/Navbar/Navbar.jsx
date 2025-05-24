@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Link href="/aboutus"><li className="hover:text-blue-900">ABOUT US</li></Link>
                     <Link href="/services"><li className="hover:text-blue-900">OUR SERVICES</li></Link>
                     <Link href="/collegeswecover"><li className="hover:text-blue-900">COLLEGES WE COVER</li></Link>
-                    <Link href="/contact"><li className="hover:text-blue-900">CONTACT US</li></Link>
+                    <Link href="/contactus"><li className="hover:text-blue-900">CONTACT US</li></Link>
                 </ul>
                 <Link href="/admissionenquiry">
                     <div className="cursor-pointer hidden lg:block p-2 bg-green-600 hover:bg-blue-950 rounded-xl text-white font-semibold" >ADMISSION ENQUIRY</div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                     <Link href="/aboutus" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">ABOUT US</li></Link>
                     <Link href="/services" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">OUR SERVICES</li></Link>
                     <Link href="/collegeswecover" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">COLLEGES WE COVER</li></Link>
-                    <Link href="/contact" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">CONTACT US</li></Link>
+                    <Link href="/contactus" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">CONTACT US</li></Link>
                     <Link href="/jobopening" onClick={() => setMenuOpen(false)}>
                         <div className=" cursor-pointer mt-4 p-2 bg-blue-900 hover:bg-green-600 rounded-lg text-white text-center " >ADMISSION ENQUIRY</div>
                     </Link>

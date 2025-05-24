@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 const CollegeWeCover = () =>{
 
     return(
-        <main>
+        <main className="mt-28">
             <HeroSection title="Colleges We Covers" />
         
         

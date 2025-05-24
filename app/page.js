@@ -4,6 +4,9 @@ import InfoSection from "@/components/InfoSection/InfoSection";
 import Card from "@/components/Card/Card";
 import Image from "next/image";
 import WhyChoose from "@/components/WhyChoose/WhyChoose";
+import TestimonialSlider from "@/components/Testimonial/TestimonialSlider";
+import CollegesWeProvide from "@/components/CollegesWeProvide/CollegesWeProvide";
+import CoursesWeOffer from "@/components/CoursesWeOffer/CoursesWeOffer";
 export default function Home() {
 
 
@@ -61,7 +64,7 @@ export default function Home() {
 
 
 
-      <section className="my-20">
+      <section className="my-16">
         <InfoSection img="/girl.webp"
           head="About Pravesharthi"
           subhead="Your Trusted Admission Partner"
@@ -70,7 +73,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="my-20">
+      <section className="my-16">
 
         <div className="flex flex-col justify-center items-center text-center">
           <h1 className="text-3xl font-bold ">Our Services </h1>
@@ -80,26 +83,36 @@ export default function Home() {
         <Card Detail={service} />
 
       </section>
-      
-      <section className="my-20">
+
+      <section>
+
+        <CoursesWeOffer />
+      </section>
+
+      <section className="my-16">
         <WhyChoose img="/s1.webp" opt={[
           { choose: "Expert Guidance from Start to Finish" },
           { choose: "Personalized Admission Support" },
-          { choose: "Wide Network of Colleges" }, 
-          {  choose: "College Shortlisting"},
-          {choose: "Timely Updates on Exams & Cutoffs" },
-          { choose: "100% Transparent Support"},
+          { choose: "Wide Network of Colleges" },
+          { choose: "College Shortlisting" },
+          { choose: "Timely Updates on Exams & Cutoffs" },
+          { choose: "100% Transparent Support" },
           { choose: "400+ Students Successfully Admitted" },
-        ]} />
+        ]} head="Why Choose Us?" />
 
       </section>
 
+      <section className="my-16">
 
+        <TestimonialSlider />
 
+      </section>
+      <section className="my-16">
 
-      <div className="h-screen">
-        <h1>aajao apppp</h1>
-      </div>
+        <CollegesWeProvide />
+
+      </section>
+
 
     </main>
   );

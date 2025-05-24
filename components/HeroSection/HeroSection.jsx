@@ -6,7 +6,7 @@ import Image from "next/image";
 // 
 const HeroSection = ({ title, subtitle, img }) => {
     return (
-        <div className="h-60 bg-blue-300 object-fit  bg-cover bg-no-repeat mt-26 " >
+        <div className="h-60 bg-blue-300 object-fit  bg-cover bg-no-repeat mt-28 " >
 
             <div className="pl-8 md:pl-28 pt-8 flex font-semibold"  data-aos="fade-up">
                 <Link href="/"><h1 className="font-bold text-orange-500 pr-1">Home </h1></Link> / <p className="pl-1"> {title} </p>

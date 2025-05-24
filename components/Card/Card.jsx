@@ -23,13 +23,13 @@ const Card = ({ Detail }) => {
 
             {/* Heading and Description */}
             <div className="space-y-2 h-1.5/3 ">
-              <h1 className="font-bold text-xl text-blue-950 h-1/4 text-center">{each.head}</h1>
+              <h1 className="font-bold text-xl text-blue-800 h-1/4 text-center">{each.head}</h1>
               <p className="text-md text-gray-700 h-3/4">{each.desc}</p>
             </div>
 
             {/* Optional Link */}
             <Link href="/services">
-              <div className="mt-4 p-2 text-center font-semibold bg-orange-400 text-white rounded-full hover:bg-orange-500 h-0.5/3">
+              <div className="mt-4 p-2 text-center font-semibold bg-blue-400 text-white rounded-full hover:bg-blue-500 h-0.5/3">
                 Read More
               </div>
             </Link>
