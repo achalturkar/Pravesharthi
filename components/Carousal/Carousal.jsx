@@ -3,6 +3,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Link from 'next/link';
 
 const Carousal = ({ Hero }) => {
   return (
@@ -33,6 +34,11 @@ const Carousal = ({ Hero }) => {
             <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center text-white text-center p-4">
               <h1 className="text-3xl md:text-5xl font-bold">{each.head}</h1>
               <p className="text-sm md:text-lg mt-2 max-w-xl">{each.subhead}</p>
+              <Link href={each.link}>
+              <div  className='bg-green-400 hover:bg-green-500 p-2 rounded-xl '>
+                {each.btn}
+              </div>
+              </Link>
             </div>
           </div>
         ))}

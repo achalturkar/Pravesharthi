@@ -12,9 +12,18 @@ export default function Home() {
 
   const hero = [
     {
+      img: "/degree.webp",
+      head: "Your Trusted Guide to College Admissions ",
+      subhead: "",
+      btn: "Admission Enquiry",
+      link: "/contact"
+    },
+    {
       img: "/cp.jpg",
       head: "Your Trusted Guide to College Admissions ",
-      subhead: ""
+      subhead: "",
+      btn: "Admission Enquiry",
+      link: "/contact"
     },
 
   ]

@@ -12,13 +12,13 @@ const testimonials = [
   {
     quote:
       "Pravesharthi helped me find the perfect college for my MBA. The counselors were supportive and always available!",
-    name: "Payal ",
-    college: "YCCEM, Nagpur",
+    name: "Agnesh ",
+    college: "YCCE",
   },
   {
     quote:
       "I was confused after my 12th, but their expert guidance cleared everything. I'm now in a top engineering college.",
-    name: "Vinay",
+    name: "Vikrant",
     college: "RCOEM, Nagpur",
   },
   {
@@ -27,26 +27,46 @@ const testimonials = [
     name: "Vinod",
     college: "KDK Medical College",
   },
+  {
+    quote:
+      "Thanks to Pravesharthi, I found the complete cutoff list of colleges in one place. It saved me hours of research!",
+    name: "Rakesh",
+    college: "Symbiosis College",
+  },
+  {
+    quote:
+      "Managing my daughter’s college search was stressful until we used Pravesharthi. Everything was clearly laid out — fees, courses, and scholarship options.", name: "Ankita",
+    name: "Ankita",
+    college: "VIIT Pune",
+  },
 ];
 
 export default function TestimonialSlider() {
   return (
     <section className="bg-blue-50 py-12 px-4 text-center">
       <div className="flex flex-col justify-center items-center">
-      <h2 className="text-2xl md:text-3xl font-semibold  mb-2">
-        What Students Say About Us
-      </h2>
-      <HandleMove/>
+        <h2 className="text-2xl md:text-3xl font-semibold  mb-2">
+          What Students Say About Us
+        </h2>
+        <HandleMove />
       </div>
 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
-        slidesPerView={1}
+        slidesPerView={2}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 3000 }}
         loop
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // for mobile screens
+          },
+          768: {
+            slidesPerView: 2, // for tablets and above
+          },
+        }}
       >
         {testimonials.map((t, index) => (
           <SwiperSlide key={index}>
